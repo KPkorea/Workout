@@ -9,7 +9,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import com.poseidon.web.dto.BoardDTO;
 import com.poseidon.web.service.IndexService;
-//commit
+
 @Controller
 public class IndexController {
 
