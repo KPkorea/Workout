@@ -10,7 +10,7 @@
 <div class="container">
 <div class="text-center mt-5">
 	<h1>Board</h1>
-<%-- 	${list } --%>
+	${list }
 	<table class="table table-hover table-dark">
 		<tr>
 			<td>번호</td>
@@ -20,16 +20,16 @@
 			<td>좋아요</td>
 			<td>조회수</td>
 		</tr>
-		<c:forEach items="${list }" var="row">
-			<tr>
-				<td>${row.b_no }</td>
-				<td>${row.b_title }</td>
-				<td>${row.b_date }</td>
-				<td>${row.member_name }</td>
-				<td>${row.b_like }</td>
-				<td>${row.b_read }</td>
-			</tr>
-		</c:forEach>
+<%-- 		<c:forEach items="${list }" var="row"> --%>
+<!-- 			<tr> -->
+<%-- 				<td>${row.b_no }</td> --%>
+<%-- 				<td>${row.b_title }</td> --%>
+<%-- 				<td>${row.b_date }</td> --%>
+<%-- 				<td>${row.member_name }</td> --%>
+<%-- 				<td>${row.b_like }</td> --%>
+<%-- 				<td>${row.b_read }</td> --%>
+<!-- 			</tr> -->
+<%-- 		</c:forEach> --%>
 	</table>
 </div>
 </div>

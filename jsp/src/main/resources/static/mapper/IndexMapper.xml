@@ -12,7 +12,7 @@
 		SELECT
 			*
 		FROM
-			boardview
+			board
 		LIMIT 0,10
 		
 	</select>
