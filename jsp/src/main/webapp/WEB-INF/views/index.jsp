@@ -4,19 +4,14 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Index</title>
+<title>Main Page</title>
 </head>
 <body>
 	<h1>Index</h1>
-	<h2>인덱스 입니다.</h2>
+	<h2>프로젝트 연습용</h2>
 	
-	<c:forEach begin="1" end="10" step="2" var="i">
-		<h3>${i }</h3>
-	</c:forEach>
-	
-	서버에서 오는 값 : ${test }<br>
-	보드의 총 글수 : ${totalSize }
-	
-	<a href="/board">board로 이동하기</a>
+	<a href="/naverLogin">로그인 페이지</a><br>
+	<a href="/board">board로 이동하기</a><br>
+	<a href="/naver-login">네이버 로그인</a>
 </body>
 </html>

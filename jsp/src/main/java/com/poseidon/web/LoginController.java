@@ -1,6 +1,11 @@
 package com.poseidon.web;
 
+import java.io.UnsupportedEncodingException;
+import java.net.MalformedURLException;
+import java.net.URISyntaxException;
+
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -34,5 +39,24 @@ public class LoginController {
 		System.out.println("로그인결과 : " + result);
 		return "redirect:/board";
 	}
+	
+//	    private final LoginService loginService;
+//
+//	    @GetMapping("/naver-login")
+//	    public void naverLogin(HttpServletRequest request, HttpServletResponse response) throws MalformedURLException, UnsupportedEncodingException, URISyntaxException {
+//	        String url = loginService.getNaverAuthorizeUrl("authorize");
+//	        try {
+//	            response.sendRedirect(url);
+//	        } catch (Exception e) {
+//	            e.printStackTrace();
+//	        }
+//	    }
+//	}
+	
+	@GetMapping("/naverLogin")
+	public String naverLogin() {
+		return "naverLogin";
+	}
+	
 
 }
